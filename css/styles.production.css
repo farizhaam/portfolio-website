@@ -210,6 +210,16 @@ svg path, polygon {
         font-style: italic;
         text-align: right;
     }
+
+    .profile__portrait{
+        display:block;
+        float:none;
+        margin:auto;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
 }
 
 /*media queries for minwidth: 500px and maxwidth: 750*/
@@ -227,6 +237,15 @@ svg path, polygon {
         font-size: 10px;
         font-style: italic;
         text-align: right;
+    }
+    .profile__portrait{
+        display:block;
+        float:none;
+        margin:auto;
+    }
+
+    .intro-text {
+        text-align: center;
     }
 }
 
