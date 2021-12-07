@@ -11,8 +11,8 @@
 }
 
 body {
-    background-color: #f4f1de;
-    color: undefined;
+    background-color: #EDEFF6;
+    color: #3d405b;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 400;
     font-size: 16px;
@@ -61,7 +61,7 @@ body {
 
 /*base font color*/
 a {
-    color: undefined;
+    color: #3d405b;
 }
 
 a:visited {
@@ -87,9 +87,10 @@ a:active {
 }
 
 .content {
+    display: inline-block;
     text-align: center;
     width: 100%;
-    padding: 20px;
+    padding: 100px;
 }
 
 table {
@@ -132,11 +133,21 @@ h1 {
 }
 
 .grid__item {
-    background-color: #ffdfaa;
+    background-color: #81CACD;
     width: auto;
     min-height: auto;
     padding: 20px;
     margin: 0;
+    border-radius: 10px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.8);
+    border-right: 2px solid rgba(0, 0, 0, 0.8);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.8);
+    -webkit-transition-duration: 0.2s;
+         -o-transition-duration: 0.2s;
+            transition-duration: 0.2s;
+    -webkit-transition-property: opacity;
+    -o-transition-property: opacity;
+    transition-property: opacity;
 }
 
 .grid__item:last-child {
@@ -145,6 +156,19 @@ h1 {
     -ms-grid-row: 1;
     -ms-grid-row-span: 2;
     grid-row: 1 / 3;
+}
+
+.grid__item:hover, .grid__item:focus {
+    /* lets the mouse appear as a hand when hovering over the frid */
+    cursor: pointer;
+    /* reduces the opacity of the grid to 80% */
+    opacity: 0.8;
+}
+
+.grid__item:active {
+    /*selected button*/
+    box-shadow: none;
+    transform: translate(2px, 2px);
 }
 
 #id_text {
@@ -170,7 +194,7 @@ svg {
         fill: #81b29a;
     }
     100% {
-        fill:undefined;
+        fill:#3d405b;
     }
 }
 
@@ -185,7 +209,7 @@ svg {
         fill: #81b29a;
     }
     100% {
-        fill:undefined;
+        fill:#3d405b;
     }
 }
 
@@ -220,6 +244,10 @@ svg path, polygon {
     .intro-text {
         text-align: center;
     }
+
+    .content{
+        padding:10px;
+    }
 }
 
 /*media queries for minwidth: 500px and maxwidth: 750*/
@@ -247,6 +275,10 @@ svg path, polygon {
     .intro-text {
         text-align: center;
     }
+
+    .content{
+        padding:20px;
+    }
 }
 
 /*media queries for max width 750px*/
@@ -264,6 +296,9 @@ svg path, polygon {
         font-size: 22px;
     }
 
+    .content{
+        padding: 30px;
+    }
 }
 
 .button {
@@ -273,13 +308,14 @@ svg path, polygon {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: #81b29a;
-    color: undefined;
+    background-color: #81CACD;
+    color: #3d405b;
     text-decoration: none;
     /*adds spacing to the button (this will be discussed more in-depth later) */
     padding: 10px;
     border-radius: 3px;
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.8);
     border-right: 2px solid rgba(0, 0, 0, 0.8);
     border-bottom: 2px solid rgba(0, 0, 0, 0.8);
     -webkit-transition-duration: 0.2s;
@@ -297,13 +333,14 @@ button {
     /* takes the font from the outer container */
     font-family: inherit;
     /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-    background-color: #81b29a;
-    color: undefined;
+    background-color: #81CACD;
+    color: #3d405b;
     text-decoration: none;
     /*adds spacing to the button (this will be discussed more in-depth later) */
     padding: 10px;
     border-radius: 3px;
     /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.8);
     border-right: 2px solid rgba(0, 0, 0, 0.8);
     border-bottom: 2px solid rgba(0, 0, 0, 0.8);
     -webkit-transition-duration: 0.2s;
@@ -322,13 +359,15 @@ button:hover, button:focus,
     opacity: 0.8;
 }
 
-button:active {
+button:active, .button:active  {
     /*selected button*/
-    
-    border-right: none;
-    border-bottom: none;
+    box-shadow: none;
+    transform: translate(2px, 2px);
 }
 
+.button:visited {
+    color: inherit;
+}
 
 @-webkit-keyframes cloud-move {
     from {
