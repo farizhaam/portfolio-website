@@ -81,8 +81,12 @@ a:active {
     text-align: center;
     width: 100%;
     padding: var(--padding);
+    margin: 0 20px;
 }
 
+.bio{
+    padding: var(--padding)
+}
 table {
     margin: 0 auto;
 }
