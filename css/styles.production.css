@@ -37,8 +37,8 @@ body {
 }
 
 #logo {
-    width: 200px;
-    height: 70px;
+    width: 250px;
+    height: 87px;
 }
 /*the last child is the menubar*/
 .page-header__item:last-child{
@@ -52,6 +52,7 @@ body {
 /*get rid off the bullet from the list*/
 .navigation-list {
     list-style-type: none;
+    font-size: 20px;
 }
 
 .navigation-list li {
@@ -72,7 +73,7 @@ a:visited {
 a:hover {
     /* No underlining when hovering over a link */
     text-decoration: none;
-    color: #e07a5f;
+    color: #ac0c89;
     -webkit-transition-duration: 0.2s;
          -o-transition-duration: 0.2s;
             transition-duration: 0.2s;
