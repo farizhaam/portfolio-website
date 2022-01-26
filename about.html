@@ -7,44 +7,81 @@
         <title>Farizha MARTAKUSUMA - Portfolio</title>
         <link rel="shortcut icon" href="img/icons8-star-48.png" type="image/x-icon" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet"> 
         <link rel="stylesheet" type="text/css" href="css/styles.production.css">
     </head>
     <body>
-        <header class="page-header">
-            <a href="index.html">
-                <img src="svg/logo_Farizha.svg" class="page-header__item" id="logo" alt="Logo of Farizha Martakusuma">          
-            </a>
-            <nav class="main-navigation page-header__item">
-                <ul role="menubar" class="navigation-list">
-                    <li role="presentation">
-                        <a href="index.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Home</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="work.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Work</a>
-                    </li>
-                    <li role="presentation">
-                        <a href="contact.html" role="menuitem" class="navigation-list__item navigation-list__item--active">Contact</a>
-                    </li>
-                </ul>
-            </nav>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f1f0ff;">
+                <a class="navbar-brand" href="index.html">
+                    <img src="svg/logo_Farizha.svg" class="page-header__item" id="logo" alt="Logo of Farizha Martakusuma">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" role="menuitem">Home</span></a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="about.html" role="menuitem">About <span class="sr-only">(current)</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="work.html" role="menuitem">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html" role="menuitem">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>            
         </header>
         
         <main class="content">
             <h1>About Farizha Martakusuma</h1>
-            <p class="bio">
-                Hi, there! I am an Indonesian web developer with a background in GIS (Geographical Information System) and experience as research assistant. I am passionate in developing a user-centered website with a functional-yet-beautiful design. My goal is to implement my skills on solving problems to support people or save the environment. <br><br>Oh, and I also love food and travelling from the bottom of my heart.
+<p class="text">
+                Hi, there! I am a Berlin-based web developer with 3 years of experience as a Research Assitant. I am passionate in developing a user-centered website with a functional-yet-beautiful design. My goal is to implement my skills on solving problems to support people or save the environment. <br><br>
+                Below is a brief overview of my technical skills and tools that I use:
             </p>
+            <div class="grid-container">            
+                
+                <div class="grid">
+                    <div class="grid__item-skill">
+                        <h3>Frontend</h3>
+                        <ul class="skill-content">
+                            <li>HTML/CSS/SASS</li>
+                            <li>JavaScript/jQuery</li>
+                            <li>React/React Native/Angular</li>
+                            <li>Node.js</li>
+                        </ul>
+                    </div>
+                    <div class="grid__item-skill">
+                        <h3>Backend</h3>
+                        <ul class="skill-content">
+                            <li>MongoDB</li>
+                            <li>PostgreSQL</li>
+                            <li>Firebase</li>
+                            <li>REST API</li>
+                        </ul>
+                    </div>
+                    <div class="grid__item-skill">
+                        <h3>Other</h3>
+                        <ul class="skill-content">
+                            <li>GitHub</li>
+                            <li>VS Code</li>
+                            <li>GIMP</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
 
             <br>
-            <button type="submit" onclick="window.open('files/CV_EN_11072021_Martakusuma.pdf')" download>Download my CV</button><br>
-
-
-
-            
+            <button class="button download-button" type="submit" onclick="window.open('files/CV_EN_11072021_Martakusuma.pdf')" download>Download my CV</button><br>
 
         </main> 
 
@@ -86,5 +123,8 @@
             </div>
         </footer>
         <script src="js/tota11y-0.1.6/build/tota11y.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     </body>
 </html>
